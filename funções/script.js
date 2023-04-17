@@ -80,18 +80,45 @@
 
 
 // Crie uma função para verificar se um valor é Truthy
+function eTruthy(valor){
+  return !!valor;
+}
+console.log(eTruthy(0));
+console.log(eTruthy(10));
 
 // Crie uma função matemática que retorne o perímetro de um quadrado
 // lembrando: perímetro é a soma dos quatro lados do quadrado
 
+function quadradin(lado1, lado2, lado3, lado4){
+  return lado1 + lado2 + lado3 + lado4;
+}
+
+console.log(quadradin(4,4,2,2))
+
+
 // Crie uma função que retorne o seu nome completo
 // ela deve possuir os parâmetros: nome e sobrenome
+function nomeCompleto(primeiroNome, segundoNome){
+  const nomeCompleto = primeiroNome + ' ' + segundoNome;
+  return nomeCompleto;
+}
+console.log(nomeCompleto('Mateus', 'Wenzler'));
 
 // Crie uma função que verifica se um número é par
+function verificando(numeroPar){
+ return numeroPar % 2 === 0;
+}
+console.log(verificando(101));
+
 
 // Crie uma função que retorne o tipo de
 // dado do argumento passado nela (typeof)
-
+function tipoDeDado(tipo){
+  return typeof tipo
+}
+console.log(tipoDeDado(2));
+console.log(tipoDeDado("Mateus"));
+console.log(tipoDeDado(true));
 
 
 // addEventListener é uma função nativa do JavaScript
